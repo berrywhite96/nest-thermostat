@@ -1,0 +1,140 @@
+div.wrapper {
+    display: flex;
+}
+.dial {
+    --main-color: white;
+    --second-color: rgba(255, 255, 255, 0.3);
+    user-select: none;
+    touch-action: none;
+    &.away {
+        .dial {
+            &__ico__leaf {
+                visibility: hidden;
+            }
+            &__lbl--target {
+                visibility: hidden;
+                &--half {
+                    visibility: hidden;
+                }
+            }
+            &__lbl--away {
+                opacity: 1;
+            }
+        }
+    }
+    .dial__shape {
+        transition: fill 0.5s;
+    }
+    &__ico__leaf {
+        fill: #13eb13;
+        opacity: 0;
+        transition: opacity 0.5s;
+        pointer-events: none;
+    }
+    &.has-leaf {
+        .dial__ico__leaf {
+            display: block;
+            opacity: 1;
+            pointer-events: initial;
+        }
+    }
+    &__editableIndicator {
+        fill: var(--main-color);
+        fill-rule: evenodd;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &--edit {
+        .dial__editableIndicator {
+            opacity: 1;
+        }
+    }
+    &--state {
+        &--off {
+            .dial__shape {
+                fill: #222;
+            }
+        }
+        &--heating {
+            .dial__shape {
+                fill: #e36304;
+            }
+        }
+        &--cooling {
+            .dial__shape {
+                fill: #007af1;
+            }
+        }
+    }
+    &__ticks {
+        path {
+            fill: rgba(255, 255, 255, 0.3);
+            &.active {
+                fill: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+    text {
+        fill: var(--main-color);
+        text-anchor: middle;
+        font-family: Helvetica, sans-serif;
+    }
+    &__lbl {
+        &--target {
+            font-size: 100px;
+            font-weight: bold;
+            &--half {
+                font-size: 40px;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.1s;
+                &.shown {
+                    opacity: 1;
+                    transition: opacity 0s;
+                }
+            }
+        }
+        &--ambient {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        &--away {
+            font-size: 72px;
+            font-weight: bold;
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    path.chevron_button {
+        fill: var(--second-color);
+        cursor: pointer;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    rect.chevron_button_hover {
+        fill: transparent;
+        cursor: pointer;
+    }
+    @media (hover: hover) {
+        path.chevron_button:hover,
+        rect.chevron_button_hover:hover + path.chevron_button {
+            fill: var(--main-color);
+        }
+    }
+    text.current_temperature {
+        font-size: 44px;
+        fill: #dcdcdc;
+    }
+    text.current_humidity {
+        fill: var(--second-color);
+        font-size: 20px;
+    }
+    path.current_action {
+        fill: var(--second-color);
+        transition: 0.25s;
+    }
+    path.current_action_active {
+        fill: #ff8000 !important;
+    }
+}

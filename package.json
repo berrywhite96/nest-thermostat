@@ -1,0 +1,43 @@
+{
+    "name": "nest-thermostat",
+    "version": "0.1.0",
+    "description": "Nest thermostat like lit element",
+    "main": "nest-thermostat.js",
+    "module": "nest-thermostat.js",
+    "type": "module",
+    "scripts": {
+        "start": "rollup -c --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/berrywhite96/nest-thermostat.git"
+    },
+    "keywords": [
+        "nest",
+        "thermostat",
+        "lit"
+    ],
+    "author": "berrywhite",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/berrywhite96/nest-thermostat/issues"
+    },
+    "homepage": "https://github.com/berrywhite96/nest-thermostat#readme",
+    "dependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "lit": "^2.3.0",
+        "postcss-preset-env": "^7.7.2",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-postcss-lit": "^2.0.0",
+        "rollup-plugin-serve": "^2.0.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "prettier": "^2.6.2",
+        "rollup": "^2.77.3",
+        "rollup-plugin-terser": "^7.0.2"
+    }
+}
