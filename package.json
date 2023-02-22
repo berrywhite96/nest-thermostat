@@ -1,5 +1,5 @@
 {
-    "name": "nest-thermostat",
+    "name": "nest-thermostat-lit",
     "version": "0.1.0",
     "description": "Nest thermostat like lit element",
     "main": "nest-thermostat.js",
