@@ -1,9 +1,10 @@
 # Nest Thermostat
 
-[![Npm package version](https://badgen.net/npm/v/express)](https://npmjs.com/package/express)
-[![Npm package yearly downloads](https://badgen.net/npm/dy/express)](https://npmjs.com/package/express)
-[![GitHub release](https://img.shields.io/github/v/release/berrywhite96/nest-thermostat?style=flat-square)](https://github.com/berrywhite96/nest-thermostat)
-[![GitHub license](https://img.shields.io/github/license/berrywhite96/nest-thermostat?style=flat-square)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Npm package version](https://badgen.net/npm/v/nest-thermostat-lit)](https://npmjs.com/package/nest-thermostat-lit)
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/berrywhite96/nest-thermostat)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
+<img width="400" alt="thermostat" src="https://user-images.githubusercontent.com/24818127/220744921-914483e3-98da-461c-a176-fd3b3d900d55.png">
 
 Nest thermostat like lit element
 
